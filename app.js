@@ -18,7 +18,23 @@ function initFirebase() {
 
         startListening();
     } catch (e) {
-        showToast('Error al conectar con Firebase: ' + e.message, 'error')
+        showToast('Error al conectar con Firebase: ' + e.message, 'error');
         steDbStatus('error');
     }
+}
+
+/* ====================================
+FIREBASE - ESCUCHAR CAMBIOS EN TIEMPO REAL
+======================================= */
+function startListening() {
+    if (!db) return;
+    const ref = db.ref('platillos');
+
+    ref.on('value', snap => {
+        const data = snap.val() || {};
+        const list = Object.entries(data).map(([id, val]) => ({ id, ...val }));
+        renderAll(list);
+    }, err => {
+        showToast('Error al leer datos: ' + err.message, 'error');
+    });
 }
