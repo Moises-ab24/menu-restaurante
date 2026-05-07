@@ -38,3 +38,24 @@ function startListening() {
         showToast('Error al leer datos: ' + err.message, 'error');
     });
 }
+
+/* ====================================
+CARGAR DATOS DE EJEMPLO
+======================================= */
+function cargarEejmplos() {
+    if (!db) return;
+    db.ref('platillos').once('value').then(snap => {
+        if (snap.exits()) {
+            showToast('La base de datos ya tiene platillos registrados.', 'info');
+            return;
+        }
+        const batch = {};
+        PLATILLOS_EJEMPLO.forEach(p => {
+            const key = db.ref('platillos').push().key;
+            batch['platillos/' + key] = p;
+        });
+        db.ref().update(batch)
+        .then(() => showToast('¡' + PLATILLOS_EJEMPLO.length + ' platillos de ejemplo cargados!', 'success'))
+        .catch(e => showToast('Error al cargar ejemplos: ' + e.message, 'error'));
+    });
+}
