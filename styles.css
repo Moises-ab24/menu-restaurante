@@ -84,29 +84,82 @@ header {
     background: var(--accent);
     color: #fff;
 
-/* ── Layout ─────────────────────────────────────────────── */
-main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-/* ── Sections ───────────────────────────────────────────── */
-.section { display: none; }
-.section.active { display: block; }
-/* ── Category filter pills ──────────────────────────────── */
-.filter-bar {
- display: flex;
- gap: 8px;
- flex-wrap: wrap;
- margin-bottom: 1.75rem;
-}
-.pill {
- padding: 5px 14px;
- border-radius: 20px;
- font-size: 0.8rem;
- font-weight: 500;
- border: 1.5px solid var(--border);
- background: var(--paper);
- color: var(--muted);
- cursor: pointer;
-transition: all .15s;
- letter-spacing: 0.02em;
-}
-.pill:hover { border-color: var(--accent); color: var(--accent); }
-.pill.active { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+    /* ── Layout ─────────────────────────────────────────────── */
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+    }
+
+    /* ── Sections ───────────────────────────────────────────── */
+    .section {
+        display: none;
+    }
+
+    .section.active {
+        display: block;
+    }
+
+    /* ── Category filter pills ──────────────────────────────── */
+    .filter-bar {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 1.75rem;
+    }
+
+    .pill {
+        padding: 5px 14px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1.5px solid var(--border);
+        background: var(--paper);
+        color: var(--muted);
+        cursor: pointer;
+        transition: all .15s;
+        letter-spacing: 0.02em;
+    }
+
+    .pill:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+
+    .pill.active {
+        background: var(--ink);
+        color: var(--cream);
+        border-color: var(--ink);
+    }
+
+    .cat-heading {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 2rem 0 0.75rem;
+    }
+
+    .cat-heading:first-of-type {
+        margin-top: 0;
+    }
+
+    .cat-heading h2 {
+        font-family: var(--font-display);
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--ink);
+    }
+
+    .cat-line {
+        flex: 1;
+        height: 1px;
+        background: var(--border);
+    }
+
+    .cat-icon {
+        font-size: 1.1rem;
+    }
+
+    /* ── Dish card (menu view) ──────────────────────────────── */
+
+    
