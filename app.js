@@ -19,7 +19,7 @@ function initFirebase() {
         startListening();
     } catch (e) {
         showToast('Error al conectar con Firebase: ' + e.message, 'error');
-        steDbStatus('error');
+        setDbStatus('error');
     }
 }
 
@@ -42,7 +42,7 @@ function startListening() {
 /* ====================================
 CARGAR DATOS DE EJEMPLO
 ======================================= */
-function cargarEejmplos() {
+function cargarEjemplos() {
     if (!db) return;
     db.ref('platillos').once('value').then(snap => {
         if (snap.exits()) {
