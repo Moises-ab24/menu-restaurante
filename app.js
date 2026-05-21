@@ -9,10 +9,10 @@ FIREBASE - INICIALIZACIÓN
 ======================================= */
 function initFirebase() {
     try {
-        initFirebase.initializeApp(firebaseConfig);
+        firebase.initializeApp(firebaseConfig);
         db = firebase.database();
 
-        db.red('.info/connected').on('value', snap => {
+        db.ref('.info/connected').on('value', snap => {
             setDbStatus(snap.val() === true ? 'connected' : 'disconnected');
         });
 
@@ -45,7 +45,7 @@ CARGAR DATOS DE EJEMPLO
 function cargarEjemplos() {
     if (!db) return;
     db.ref('platillos').once('value').then(snap => {
-        if (snap.exits()) {
+        if (snap.exists()) {
             showToast('La base de datos ya tiene platillos registrados.', 'info');
             return;
         }
