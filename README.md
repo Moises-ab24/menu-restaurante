@@ -15,8 +15,8 @@ Los datos se sincronizan automáticamente entre todos los dispositivos conectado
 
 | Capa | Tecnología |
 |---|---|
-| Estructura | HTML5 |
-| Estilos | CSS3 |
+| Estructura | HTML |
+| Estilos | CSS |
 | Lógica | JavaScript |
 | Base de datos | Firebase Realtime Database |
 | Tipografía | Playfair Display · DM Sans (Google Fonts) |
@@ -53,7 +53,7 @@ Los datos se sincronizan automáticamente entre todos los dispositivos conectado
    ↓
 🌐 GitHub Pages sirve los archivos estáticos
    ↓
-🧩 El navegador carga HTML + CSS + JS vanilla
+🧩 El navegador carga HTML + CSS + JS
    ↓
 🔥 firebase-config.js inicializa el SDK de Firebase
    ↓
@@ -61,7 +61,7 @@ Los datos se sincronizan automáticamente entre todos los dispositivos conectado
    ↓
 📋 El menú público renderiza los platillos por categoría
    ↓
-⚙️ (Admin) Usuario agrega / edita / elimina un platillo
+⚙️ Usuario agrega / edita / elimina un platillo
    ↓
 🔄 Firebase actualiza el nodo en Realtime Database
    ↓
