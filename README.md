@@ -44,6 +44,7 @@ Los datos se sincronizan automáticamente entre todos los dispositivos conectado
 | Platos fuertes | 🍖 |
 | Postres | 🍮 |
 | Bebidas | 🥤 |
+| Otros | ✨ |
 
 ## 📝 Resumen general de todo el proyecto
 
