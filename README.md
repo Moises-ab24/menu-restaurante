@@ -15,9 +15,9 @@ Los datos se sincronizan automáticamente entre todos los dispositivos conectado
 
 | Capa | Tecnología |
 |---|---|
-| Estructura | HTML5 semántico |
-| Estilos | CSS3 puro (variables, grid, responsive) |
-| Lógica | JavaScript vanilla (ES6+) |
+| Estructura | HTML5 |
+| Estilos | CSS3 |
+| Lógica | JavaScript |
 | Base de datos | Firebase Realtime Database |
 | Tipografía | Playfair Display · DM Sans (Google Fonts) |
 | Deploy | GitHub Pages |
@@ -37,14 +37,13 @@ Los datos se sincronizan automáticamente entre todos los dispositivos conectado
 
 ## 🏷️ Categorías disponibles
 
-| ID | Nombre | Ícono |
-|---|---|---|
-| `entrada` | Entradas | 🥗 |
-| `sopa` | Sopas | 🍲 |
-| `plato` | Platos fuertes | 🍖 |
-| `postre` | Postres | 🍮 |
-| `bebida` | Bebidas | 🥤 |
-| `otro` | Otros | ✨ |
+| Nombre | Ícono |
+|---|---|
+| Entradas | 🥗 |
+| Sopas | 🍲 |
+| Platos fuertes | 🍖 |
+| Postres | 🍮 |
+| Bebidas | 🥤 |
 
 ## 📝 Resumen general de todo el proyecto
 
