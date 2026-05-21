@@ -16,8 +16,8 @@ Ya disponible en (https://moises-ab24.github.io/menu-restaurante/)
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8b0f6ee6-cb08-497a-bf6c-bda721ecbdf7" width="1300" height="650"/>
   <img src="https://github.com/user-attachments/assets/79f09068-2a3c-40a2-8358-5498c771d3dc" width="1300" height="650"/>
+  <img src="https://github.com/user-attachments/assets/8b0f6ee6-cb08-497a-bf6c-bda721ecbdf7" width="1300" height="650"/>
 </p>
 
 ## 🛠️ Stack
