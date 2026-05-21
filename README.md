@@ -11,6 +11,8 @@
 
 Los datos se sincronizan automáticamente entre todos los dispositivos conectados gracias a Firebase Realtime Database.
 
+Ya disponible en (https://moises-ab24.github.io/menu-restaurante/)
+
 ## 🛠️ Stack
 
 | Capa | Tecnología |
